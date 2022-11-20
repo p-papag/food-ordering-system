@@ -7,6 +7,8 @@ This is a Java Spring Boot demo project from [Ali Gelenler's Udemy course](https
 - Command Query Responsibility Separation (CQRS)
 - Containerization
 
+---
+
 # Tech Stack :rocket:
 Building such a delicate and complex project requires various tools and frameworks. To achieve such a task, the following were used:
 - Java Spring Boot
@@ -20,6 +22,8 @@ Building such a delicate and complex project requires various tools and framewor
 - Confluent Helm
 - Zookeeper
 
+---
+
 # Details :books:
 To begin with, let's see the Dependency Graph of the whole project:
 
@@ -30,6 +34,8 @@ and messages are exchanged between them with **Outbox** pattern using **Apache K
 change independently. **Clean &amp; / or Hexagonal Architecture** can be achieved naturally while using DDD in a sensible way. On top of that, **CQRS** is used to have
 better performance by separating read and write operations since we can scale each part separately. In an asychronous environment, we want to have an *eventual consistency*
 on our system, and CQRS really help us achieve that.
+
+---
 
 # How to Run :runner:
 1) In order to run this project, you have to install the following:
@@ -59,6 +65,12 @@ services running as this picture:
 
 ![orderGet](https://user-images.githubusercontent.com/15210852/202909940-a2e74175-eacf-48cc-b175-731ac090fb48.jpg)
 
+---
 
+## PS1:
+To avoid writing your requests' body on your own, you can use the appropriate files in `food-ordering-system/json-files`.
+
+## PS2:
+I will soon add a new branch with the Kubernetes setup.
 
 
